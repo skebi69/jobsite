@@ -204,7 +204,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
