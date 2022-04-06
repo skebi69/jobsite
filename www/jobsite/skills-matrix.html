@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=devide-width, initial-scale=1.0">
-    <title>John Kennedy Portfolio Site</title>
+    <title>John Kennedy's Skills Matrix</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="" anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
@@ -24,42 +24,106 @@
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="./#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="./#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
                 <li class="nav__item"><a href="./#about" class="nav__link">About Me</a></li>
                 <li class="nav__item"><a href="./#work" class="nav__link">My Work</a></li>
-                <li class="nav__item"><a href="./#cal" class="nav__link">My Calendar</a></li>
+                <li class="nav__item"><a href="index.html#cal" class="nav__link">My Calendar</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="intro">
+    <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            The title <strong>of my project</strong>
+            <strong>John Kennedy's</strong> Skills Matrix 
         </h1>
-        <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-        <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro">Linux System Engineer<br> Cloud (AWS) Engineer<br> I am the Ops in DevOps</p>
+        <img src="img/Headshot-1.png" alt="My headshot" class="intro__img">
     </section>
     
     <div class="portfolio-item-individual">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla sit amet velit et dictum. Maecenas facilisis augue lectus, eu egestas sem facilisis ac. In rhoncus hendrerit mi mollis convallis. Integer vitae tempus purus. Quisque lacinia aliquet sagittis. Sed consequat blandit enim vel pellentesque. Maecenas cursus malesuada neque, vitae tincidunt dolor ultricies et. Sed semper est id metus pellentesque, sed volutpat ligula consectetur. </p>
-        <img src="img/portfolio-details.jpg" alt="">
-        <p>Pellentesque euismod pharetra enim, pretium efficitur nibh mattis lobortis. Vivamus purus tellus, commodo eget ligula et, accumsan vestibulum nulla. Vestibulum facilisis erat non faucibus dignissim. Nullam eget nulla purus. Ut interdum scelerisque metus nec accumsan. Donec urna arcu, tempus tincidunt auctor ac, iaculis at orci. Pellentesque eleifend diam id neque egestas aliquam. Phasellus sit amet nibh in mi accumsan viverra et vitae mauris. Quisque hendrerit sollicitudin imperdiet. Nulla facilisi. Aenean semper faucibus tortor a consequat. Vivamus et orci non purus sollicitudin egestas in nec libero. </p>
-        <p>In ac quam quis justo tincidunt ultrices. Aliquam sed dolor sit amet odio porttitor suscipit non sed urna. Sed eget blandit sapien, et hendrerit tellus. Nam purus magna, imperdiet quis purus eu, vulputate vestibulum ante. Nunc ut porta velit. Nullam dignissim massa dui, vel iaculis ante consectetur vitae. Maecenas eget augue eu quam rhoncus placerat. Donec non augue feugiat nulla gravida dictum et a ex. Integer eget odio tempor, volutpat augue vel, semper massa. Mauris non massa velit. Proin vitae massa imperdiet, hendrerit metus quis, gravida nisi.</p>
+        <p>The table below outlines my prominent skill sets. I do have other skills as well but these are the main ones I am looking to work in. I consider myself a "Jack of all trades" - master of few.  </p>
+        <p>NOTE: </p>
     </div>
 
-    <table>
-        <tr>
+    <table class="matrix">
+        <tr class="table-header">
             <th>Skill</th>
             <th>Experience Level</th>
             <th>Current</th>
-            <th>Notes</th>
+            <th>Details</th>
         </tr>
-        <tr>
-            <td>Skill</td>
-            <td>Level</td>
-            <td>Current</td>
-            <td>Notes</td>
+        <tr class="table-row-odd">
+            <td rowspan="2">Linux System Administration</td>
+            <td rowspan="2">Advanced</td>
+            <td rowspan="2">Yes and no</td>
+            <td rowspan="2">Experience with Red Hat (Yes), Debian-based (Yes), SuSE (No), Solaris (No), HP-UX (No)</td>
+        </tr>
+        <tr class="table-row-even">
+            <td rowspan="2">Shell Scripting</td>
+            <td rowspan="2">Advanced</td>
+            <td rowspan="2">Yes</td>
+            <td rowspan="2">Experience with BASH (Advanced), Python (Novice), and Ruby (Novice)</td>
+        </tr>
+        <tr class="table-row-odd">
+            <td rowspan="2">Cloud Computing</td>
+            <td rowspan="2">Strong Intermediate</td>
+            <td rowspan="2">Yes</td>
+            <td rowspan="2">AWS (Advanced), Digital Ocean (Intermediate), Linode (Novice) </td>
+        </tr>
+        <tr class="table-row-even">
+            <td rowspan="2">Virtualization</td>
+            <td rowspan="2">Intermediate</td>
+            <td rowspan="2">Yes</td>
+            <td rowspan="2">Docker (Yes, Strong Intermediate), Kubernetes (Yes, Novice), VMWare (No, Intermediate) </td>
+        </tr>
+        <tr class="table-row-odd">
+            <td rowspan="2">Web Administration</td>
+            <td rowspan="2">Intermediate</td>
+            <td rowspan="2">Yes</td>
+            <td rowspan="2">Nginx, Apache</td>
+        </tr>
+        <tr class="table-row-even">
+            <td rowspan="2">Configuration Management</td>
+            <td rowspan="2">Intermediate</td>
+            <td rowspan="2">Yes</td>
+            <td rowspan="2">SaltStack, Puppet, Terraform (Strong novice), Ansible (Strong novice) </td>
+        </tr>
+        <tr class="table-row-odd">
+            <td rowspan="2">Monitoring</td>
+            <td rowspan="2">Intermediate</td>
+            <td rowspan="2">No</td>
+            <td rowspan="2">Nagios, Zabbix, Zenoss (Novice)</td>
+        </tr>
+        <tr class="table-row-even">
+            <td rowspan="2">Database</td>
+            <td rowspan="2">Strong Novice</td>
+            <td rowspan="2">No</td>
+            <td rowspan="2">MariaDB (MySQL), PostgreSQL, Oracle</td>
+        </tr>
+        <tr class="table-row-odd">
+            <td rowspan="2">Continous Integration</td>
+            <td rowspan="2">Novice</td>
+            <td rowspan="2">No</td>
+            <td rowspan="2">Jenkins</td>
+        </tr>
+        <tr class="table-row-even">
+            <td rowspan="2">Misc</td>
+            <td rowspan="2">Various</td>
+            <td rowspan="2">Various</td>
+            <td rowspan="2">Elasticsearch (Yes, Novice)</td>
+        </tr>
+        <tr class="table-row-odd">
+            <td rowspan="2">Skill</td>
+            <td rowspan="2">Level</td>
+            <td rowspan="2">Current</td>
+            <td rowspan="2">Notes</td>
+        </tr>
+        <tr class="table-row-even">
+            <td rowspan="2">Skill</td>
+            <td rowspan="2">Level</td>
+            <td rowspan="2">Current</td>
+            <td rowspan="2">Notes</td>
         </tr>
     </table>
         

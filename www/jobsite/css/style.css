@@ -14,6 +14,8 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
+    --clr-nope: #D7300D;
+    --clr-maybe: #FAE704;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -112,6 +114,10 @@ h3 {
 }
 
 .section__subtitle--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section__subtitle--status {
     font-weight: var(--fw-reg);
 }
 
@@ -261,6 +267,10 @@ header {
     display: inline-block;
 }
 
+.section__subtitle--status {
+    display: inline-block;
+}
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
@@ -289,6 +299,23 @@ header {
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+
+    .section__subtitle--status {
+        align-self: start;
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        position: relative;
+        left: -1.5em;
+        width: 400px;
+        background: var(--clr-accent);
+        padding: .25em 1em;
+        font-family: var(--ff-primary);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+    
 }
 
 /* My Services Section */
@@ -418,6 +445,20 @@ header {
     transform: scale(1.5);
     opacity: .75;
 }
+ /* Individual portfolio tiem styles */
+
+ .portfolio-item-individual {
+     padding: 0 2em 2em;
+     max-width: 1000px;
+     margin: 0 auto;
+ }
+
+ .portfolio-item-individual p {
+     text-align: center;
+     max-width: 800 px;
+     margin-left: 0;
+     margin-right: 0;
+ }
 
 /* Footer */
 
